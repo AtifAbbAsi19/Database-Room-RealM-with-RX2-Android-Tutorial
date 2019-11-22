@@ -10,6 +10,7 @@ import androidx.room.PrimaryKey
 class ContactNumber(
         @PrimaryKey(autoGenerate = true)
         var id: Int,
+
         @NonNull
         @ColumnInfo(name = "email") var email: String
         )

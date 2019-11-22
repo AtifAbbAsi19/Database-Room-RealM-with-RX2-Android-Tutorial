@@ -7,12 +7,12 @@ import androidx.room.PrimaryKey
 
 @Entity(tableName = "address")
 class Address(
-
+//var id: String = UUID.randomUUID().toString()
         @PrimaryKey(autoGenerate = true)
         var id: Int,
+
         @NonNull
         @ColumnInfo(name = "email") var email: String
-
 
 
 )
