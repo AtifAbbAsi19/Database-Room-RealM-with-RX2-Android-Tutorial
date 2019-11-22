@@ -1,7 +1,8 @@
-package com.droid.databasetutorial
+package com.droid.databasetutorial.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.droid.databasetutorial.R
 
 class MainActivity : AppCompatActivity() {
 

@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab4610f6-300e-43d8-955a-06ff09c9c621" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/data/Account.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/data/ContactNumber.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/data/User.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/data/User.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/data/User.kt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,11 +38,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/data/User.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="136">
+              <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+              <folding>
+                <element signature="e#41#104#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -58,11 +59,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/data/ContactNumber.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+            <state relative-caret-position="68">
+              <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -82,9 +83,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/data/User.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/data/Account.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/data/ContactNumber.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/data/User.kt" />
       </list>
     </option>
   </component>
@@ -173,8 +174,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
+    <option name="x" value="85" />
+    <option name="y" value="25" />
     <option name="width" value="1750" />
     <option name="height" value="980" />
   </component>
@@ -223,6 +224,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/build.gradle" />
     <property name="not.eligible.for.single.variant.sync" value="true" />
@@ -320,7 +322,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" visible="true" weight="0.2966443" />
+      <window_info content_ui="combo" id="Project" visible="true" weight="0.2966443" />
       <window_info id="Structure" side_tool="true" />
       <window_info id="Build Variants" side_tool="true" />
       <window_info id="Image Layers" />
@@ -334,7 +336,7 @@
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="TODO" />
       <window_info anchor="bottom" id="Debug" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.329429" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.329429" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Flutter Performance" side_tool="true" />
       <window_info anchor="bottom" id="Build" weight="0.30307466" />
@@ -356,13 +358,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/data/User.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/data/Account.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -372,8 +367,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/data/ContactNumber.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+        <state relative-caret-position="68">
+          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/data/User.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+          <folding>
+            <element signature="e#41#104#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
