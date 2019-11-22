@@ -5,13 +5,16 @@ import androidx.annotation.NonNull
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import androidx.room.TypeConverters
 import com.droid.databasetutorial.data.dao.UserDao
 import com.droid.databasetutorial.data.entity.Account
 import com.droid.databasetutorial.data.entity.Address
 import com.droid.databasetutorial.data.entity.ContactNumber
 import com.droid.databasetutorial.data.entity.User
+import com.droid.databasetutorial.data.utils.TypeConverterUtils
 
 @Database(entities = [User::class, Account::class, ContactNumber::class, Address::class], version = 1)
+@TypeConverters(TypeConverterUtils::class)
 abstract class AppDatabase : RoomDatabase() {
 
     abstract fun userDao(): UserDao

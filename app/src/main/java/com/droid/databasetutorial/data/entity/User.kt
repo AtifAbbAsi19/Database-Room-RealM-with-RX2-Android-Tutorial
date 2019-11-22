@@ -1,9 +1,9 @@
 package com.droid.databasetutorial.data.entity
 
 import androidx.annotation.NonNull
-import androidx.room.ColumnInfo
-import androidx.room.Entity
-import androidx.room.PrimaryKey
+import androidx.room.*
+import com.droid.databasetutorial.data.utils.TypeConverterUtils
+
 
 @Entity(tableName = "user")
 data class User(
@@ -23,9 +23,13 @@ data class User(
         @NonNull
         @ColumnInfo(name = "email") var email: String,
 
+        //@Embedded
         @NonNull
-        @ColumnInfo(name = "contact_number") var contactNumber: List<ContactNumber>,
+        @ColumnInfo(name = "contact_number") var contactNumber: ArrayList<ContactNumber>,
+
 
         @NonNull
-        @ColumnInfo(name = "account_number") var accountNumber: List<Account>
+        @ColumnInfo(name = "account_number") var accountNumber: ArrayList<Account>
 )
+
+

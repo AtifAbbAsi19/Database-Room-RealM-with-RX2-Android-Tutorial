@@ -10,17 +10,22 @@ class Address(
 
         @PrimaryKey(autoGenerate = true)
         var id: Int,
-
         @NonNull
-        @ColumnInfo(name = "city") var city: String,
+        @ColumnInfo(name = "email") var email: String
 
-        @NonNull
-        @ColumnInfo(name = "street_number") var streetNumber: String,
 
-        @NonNull
-        @ColumnInfo(name = "postal_code") var postalCode: String,
-
-        @NonNull
-        @ColumnInfo(name = "is_official_address") var officialAddress: Boolean
 
 )
+
+/*
+@NonNull
+@ColumnInfo(name = "city") var city: String,
+
+@NonNull
+@ColumnInfo(name = "street_number") var streetNumber: String,
+
+@NonNull
+@ColumnInfo(name = "postal_code") var postalCode: String,
+
+@NonNull
+@ColumnInfo(name = "is_official_address") var officialAddress: Boolean*/
