@@ -10,6 +10,7 @@ class Address(
 
         @PrimaryKey(autoGenerate = true)
         var id: Int,
+
         @NonNull
         @ColumnInfo(name = "city") var city: String,
 
@@ -19,6 +20,7 @@ class Address(
         @NonNull
         @ColumnInfo(name = "postal_code") var postalCode: String,
 
-        @ColumnInfo(name = "is_offical_address") var officalAddress: Boolean
+        @NonNull
+        @ColumnInfo(name = "is_official_address") var officialAddress: Boolean
 
 )
