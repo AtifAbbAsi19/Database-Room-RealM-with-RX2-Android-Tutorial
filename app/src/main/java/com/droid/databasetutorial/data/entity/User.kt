@@ -1,19 +1,25 @@
 package com.droid.databasetutorial.data.entity
 
+import androidx.annotation.NonNull
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import com.droid.databasetutorial.data.entity.Account
-import com.droid.databasetutorial.data.entity.ContactNumber
 
 @Entity(tableName = "user")
 data class User(
         @PrimaryKey(autoGenerate = true)
         var id: Int,
+        @NonNull
+
         @ColumnInfo(name = "user_name") var userName: String,
+        @NonNull
         @ColumnInfo(name = "first_name") var firstName: String,
+        @NonNull
         @ColumnInfo(name = "last_name") var lastName: String,
+        @NonNull
         @ColumnInfo(name = "email") var email: String,
-        @ColumnInfo(name = "contactNumber") var contactNumber: List<ContactNumber>,
-        @ColumnInfo(name = "accountNumber") var accountNumber: List<Account>
+        @NonNull
+        @ColumnInfo(name = "contact_number") var contactNumber: List<ContactNumber>,
+        @NonNull
+        @ColumnInfo(name = "account_number") var accountNumber: List<Account>
 )
