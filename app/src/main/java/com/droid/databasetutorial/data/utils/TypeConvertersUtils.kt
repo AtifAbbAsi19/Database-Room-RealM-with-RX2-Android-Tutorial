@@ -4,7 +4,7 @@ import androidx.room.TypeConverter
 import com.droid.databasetutorial.data.entity.Address
 import com.droid.databasetutorial.data.entity.ContactNumber
 
-class TypeConverterUtils {
+class TypeConvertersUtils {
 
     companion object {
 

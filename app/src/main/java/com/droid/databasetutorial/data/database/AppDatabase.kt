@@ -1,7 +1,6 @@
 package com.droid.databasetutorial.data.database
 
 import android.content.Context
-import androidx.annotation.NonNull
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
@@ -11,10 +10,10 @@ import com.droid.databasetutorial.data.entity.Account
 import com.droid.databasetutorial.data.entity.Address
 import com.droid.databasetutorial.data.entity.ContactNumber
 import com.droid.databasetutorial.data.entity.User
-import com.droid.databasetutorial.data.utils.TypeConverterUtils
+import com.droid.databasetutorial.data.utils.TypeConvertersUtils
 
 @Database(entities = [User::class, Account::class, ContactNumber::class, Address::class], version = 1)
-@TypeConverters(TypeConverterUtils::class)
+@TypeConverters(TypeConvertersUtils::class)
 abstract class AppDatabase : RoomDatabase() {
 
     abstract fun userDao(): UserDao
@@ -34,7 +33,7 @@ abstract class AppDatabase : RoomDatabase() {
                 val instance = Room.databaseBuilder(
                         context.applicationContext,
                         AppDatabase::class.java,
-                        "word_database"
+                        "user_database"
                 ).build()
                 INSTANCE = instance
                 return instance

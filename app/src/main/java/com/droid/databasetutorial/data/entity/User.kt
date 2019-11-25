@@ -2,7 +2,7 @@ package com.droid.databasetutorial.data.entity
 
 import androidx.annotation.NonNull
 import androidx.room.*
-import com.droid.databasetutorial.data.utils.TypeConverterUtils
+import kotlin.collections.ArrayList
 
 @SuppressWarnings(RoomWarnings.PRIMARY_KEY_FROM_EMBEDDED_IS_DROPPED)
 @Entity(tableName = "user")
@@ -10,6 +10,10 @@ data class User(
 
         @PrimaryKey(autoGenerate = true)
         var id: Int,
+
+   /*     @PrimaryKey
+        @ColumnInfo(name = "id")
+        var id: String = UUID.randomUUID().toString()*/
 
         // @SerializedName("user_name")
         @NonNull
