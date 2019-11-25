@@ -11,13 +11,13 @@ class TypeConvertersUtils {
         @JvmStatic
         @TypeConverter
         fun toAddress(email: String): Address? {
-            return if (email == null) null else Address(0, email)
+            return if (email == null) null else Address(-1, email)
         }
 
         @JvmStatic
         @TypeConverter
         fun toContactNumber(email: String): ContactNumber? {
-            return if (email == null) null else ContactNumber(0, email)
+            return if (email == null) null else ContactNumber(-1, email)
         }
 
     }

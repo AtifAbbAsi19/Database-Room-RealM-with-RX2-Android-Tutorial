@@ -38,7 +38,7 @@ abstract class AppDatabase : RoomDatabase() {
                 INSTANCE = instance
                 return instance
             }
-        }
+        }//end of get database instance method
     }
 
 

@@ -8,8 +8,8 @@ import androidx.room.PrimaryKey
 
 @Entity(tableName = "contact_number")
 class ContactNumber(
-        @PrimaryKey(autoGenerate = true)
-        var id: Int,
+    /*    @PrimaryKey(autoGenerate = true)
+        var id: Int,*/
 
         @NonNull
         @ColumnInfo(name = "email") var email: String

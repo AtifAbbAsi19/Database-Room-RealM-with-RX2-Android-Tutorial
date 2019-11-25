@@ -11,9 +11,9 @@ data class User(
         @PrimaryKey(autoGenerate = true)
         var id: Int,
 
-   /*     @PrimaryKey
-        @ColumnInfo(name = "id")
-        var id: String = UUID.randomUUID().toString()*/
+        /*     @PrimaryKey
+             @ColumnInfo(name = "id")
+             var id: String = UUID.randomUUID().toString()*/
 
         // @SerializedName("user_name")
         @NonNull
@@ -28,7 +28,11 @@ data class User(
         @NonNull
         @ColumnInfo(name = "email") var email: String,
 
-        //@Embedded
+        /**
+         * @Embedded
+         * https://developer.android.com/reference/android/arch/persistence/room/Embedded
+         */
+
         @NonNull
         @Embedded(prefix = "contact_number")
         var contactNumber: ArrayList<ContactNumber>,
