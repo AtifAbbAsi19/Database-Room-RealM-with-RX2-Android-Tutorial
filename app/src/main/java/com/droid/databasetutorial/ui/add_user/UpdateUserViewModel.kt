@@ -10,9 +10,9 @@ import androidx.lifecycle.ViewModel
 
 class UpdateUserViewModel : ViewModel() {
 
-    init {
-       // getUserName()
-    }
+  /*  init {
+
+   }*/
 
     //first enable data binding for ObservableField
 
