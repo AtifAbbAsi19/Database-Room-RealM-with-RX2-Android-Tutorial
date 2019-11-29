@@ -1,17 +1,32 @@
 package com.droid.databasetutorial.ui
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.widget.TextView
 import com.droid.databasetutorial.R
 import com.droid.databasetutorial.data.database.AppDatabase
 import com.droid.databasetutorial.data.entity.ContactNumber
 import com.droid.databasetutorial.data.entity.User
+import com.droid.databasetutorial.ui.add_user.AddUserDetails
 
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+
+        val addUserTextView: TextView=findViewById(R.id.addUser)
+
+        addUserTextView.setOnClickListener(object:View.OnClickListener{
+            override fun onClick(p0: View?) {
+               startActivity(Intent(applicationContext,AddUserDetails::class.java))
+            }
+        })
+
+
 
 //AppDatabase.getDatabase(this).userDao().insertUser()
 //todo getting error on type convertor
