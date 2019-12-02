@@ -18,14 +18,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
-        val addUserTextView: TextView=findViewById(R.id.addUser)
+        val addUserTextView: TextView= this.findViewById(R.id.addUser)
 
-        addUserTextView.setOnClickListener(object:View.OnClickListener{
-            override fun onClick(p0: View?) {
-               startActivity(Intent(applicationContext,AddUserDetails::class.java))
-            }
-        })
-
+        addUserTextView.setOnClickListener { startActivity(Intent(applicationContext,AddUserDetails::class.java)) }
 
 
 //AppDatabase.getDatabase(this).userDao().insertUser()

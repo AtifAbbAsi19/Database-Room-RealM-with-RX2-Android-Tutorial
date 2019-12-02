@@ -2,7 +2,9 @@ package com.droid.databasetutorial.ui.add_user
 
 import android.text.Editable
 import android.text.TextWatcher
+import android.widget.TextView
 import androidx.databinding.Bindable
+import androidx.databinding.BindingAdapter
 import androidx.databinding.ObservableBoolean
 import androidx.databinding.ObservableField
 import androidx.lifecycle.ViewModel
@@ -10,9 +12,9 @@ import androidx.lifecycle.ViewModel
 
 class UpdateUserViewModel : ViewModel() {
 
-  /*  init {
+    /*  init {
 
-   }*/
+     }*/
 
     //first enable data binding for ObservableField
 
@@ -24,6 +26,11 @@ class UpdateUserViewModel : ViewModel() {
     var accountNumber: ObservableField<String> = ObservableField()
     var updateButtonEnable = ObservableBoolean(false)
 
+
+    @BindingAdapter("android:greeting")
+    fun bindingAdapterExample(textView: TextView, value: String) {
+        textView.text = "".plus(value)
+    }
 
 
     @Bindable
