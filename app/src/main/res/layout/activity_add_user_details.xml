@@ -112,18 +112,16 @@
             app:layout_constraintTop_toBottomOf="@+id/accountNumberEt" />
 
 
-
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/textView"
+            greeting="Heelo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
-            android:text="Testing"
             android:gravity="center"
-            android:greeting="Heelo"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/updateUserBtn"/>
+            app:layout_constraintTop_toBottomOf="@+id/updateUserBtn" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -27,7 +27,7 @@ class UpdateUserViewModel : ViewModel() {
     var updateButtonEnable = ObservableBoolean(false)
 
 
-    @BindingAdapter("android:greeting")
+    @BindingAdapter("app:greeting")
     fun bindingAdapterExample(textView: TextView, value: String) {
         textView.text = "".plus(value)
     }
