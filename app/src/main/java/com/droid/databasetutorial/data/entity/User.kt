@@ -45,7 +45,7 @@ data class User(
 //        @ColumnInfo(name = "account_number") var accountNumber: ArrayList<Account>
 // @Ignore
 ) {
-    constructor() : this(-1, "", "", "", "", ArrayList<ContactNumber>(), ArrayList<Account>())
+    constructor() : this( -1, "", "", "", "", ArrayList<ContactNumber>(), ArrayList<Account>())
 }
 
 

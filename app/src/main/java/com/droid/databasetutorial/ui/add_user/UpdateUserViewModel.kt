@@ -37,12 +37,12 @@ class UpdateUserViewModel : ViewModel() {
      * @Link https://codinginfinite.com/android-room-persistent-rxjava/
      *
      */
-    @BindingAdapter("app:greeting")
+ /*   @BindingAdapter("app:greeting")
     fun bindingAdapterExample(textView: TextView, value: String) {
         textView.text = "".plus(value)
     }
 
-
+*/
     fun setTextView(textView: TextView) {
         this.view = textView
     }
@@ -54,7 +54,7 @@ class UpdateUserViewModel : ViewModel() {
             override fun afterTextChanged(editable: Editable?) {
                 if (!editable.isNullOrEmpty()) {
                     userName.set(editable.toString())
-                    bindingAdapterExample(view!!, editable.toString())
+//                    bindingAdapterExample(view!!, editable.toString())
                     updateButtonEnable.set(true)
                 } else {
                     updateButtonEnable.set(false)

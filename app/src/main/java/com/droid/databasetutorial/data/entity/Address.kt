@@ -5,14 +5,20 @@ import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
+
 @Entity(tableName = "address")
-class Address(
-//var id: String = UUID.randomUUID().toString()
-        @NonNull
-        @ColumnInfo(name = "email") var email: String) {
+ class Address {
+
+
+    //var id: String = UUID.randomUUID().toString()
+
+    @NonNull
+    @ColumnInfo(name = "email")
+    var email: String? = null
 
     @PrimaryKey(autoGenerate = true)
-    lateinit var id: String
+    var id: Int = -1
+
 
 }
 
