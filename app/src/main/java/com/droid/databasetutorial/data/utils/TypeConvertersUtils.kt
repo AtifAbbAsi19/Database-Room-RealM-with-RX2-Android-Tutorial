@@ -15,7 +15,7 @@ class TypeConvertersUtils {
         @JvmStatic
         @TypeConverter
         fun toAddress(email: String): Address? {
-            return if (email == null) null else Address(-1, email)
+            return if (email == null) null else Address(email)
         }
 
         @JvmStatic

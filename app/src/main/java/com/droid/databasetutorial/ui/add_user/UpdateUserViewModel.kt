@@ -32,6 +32,10 @@ class UpdateUserViewModel : ViewModel() {
 
     /**
      * @Link https://android.jlelse.eu/android-data-binding-binding-adapters-part-5-2bc91e43caa0
+     *
+     * @author Rx Java2 using Room database
+     * @Link https://codinginfinite.com/android-room-persistent-rxjava/
+     *
      */
     @BindingAdapter("app:greeting")
     fun bindingAdapterExample(textView: TextView, value: String) {
@@ -44,13 +48,13 @@ class UpdateUserViewModel : ViewModel() {
     }
 
     @Bindable
-     fun getUserName(): TextWatcher {
+    fun getUserName(): TextWatcher {
 
         return object : TextWatcher {
             override fun afterTextChanged(editable: Editable?) {
                 if (!editable.isNullOrEmpty()) {
                     userName.set(editable.toString())
-                    bindingAdapterExample(view!!,editable.toString())
+                    bindingAdapterExample(view!!, editable.toString())
                     updateButtonEnable.set(true)
                 } else {
                     updateButtonEnable.set(false)
