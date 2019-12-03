@@ -12,7 +12,7 @@ import com.droid.databasetutorial.data.entity.ContactNumber
 import com.droid.databasetutorial.data.entity.User
 import com.droid.databasetutorial.data.utils.TypeConvertersUtils
 
-@Database(entities = [User::class, Account::class, ContactNumber::class, Address::class], version = 1)
+@Database(entities = [User::class, Account::class, ContactNumber::class, Address::class], version = 1, exportSchema = false)
 @TypeConverters(TypeConvertersUtils::class)
 abstract class AppDatabase : RoomDatabase() {
 

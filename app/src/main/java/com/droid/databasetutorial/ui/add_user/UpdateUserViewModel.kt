@@ -3,6 +3,7 @@ package com.droid.databasetutorial.ui.add_user
 import android.text.Editable
 import android.text.TextWatcher
 import android.widget.TextView
+import androidx.annotation.NonNull
 import androidx.databinding.Bindable
 import androidx.databinding.BindingAdapter
 import androidx.databinding.ObservableBoolean
@@ -26,6 +27,7 @@ class UpdateUserViewModel : ViewModel() {
     var accountNumber: ObservableField<String> = ObservableField()
     var updateButtonEnable = ObservableBoolean(false)
 
+    var view: TextView? = null
 
     @BindingAdapter("app:greeting")
     fun bindingAdapterExample(textView: TextView, value: String) {
@@ -33,13 +35,18 @@ class UpdateUserViewModel : ViewModel() {
     }
 
 
+    fun setTextView(textView: TextView) {
+        this.view = textView
+    }
+
     @Bindable
-    public fun getUserName(): TextWatcher {
+     fun getUserName(): TextWatcher {
 
         return object : TextWatcher {
             override fun afterTextChanged(editable: Editable?) {
                 if (!editable.isNullOrEmpty()) {
                     userName.set(editable.toString())
+                    bindingAdapterExample(view!!,editable.toString())
                     updateButtonEnable.set(true)
                 } else {
                     updateButtonEnable.set(false)

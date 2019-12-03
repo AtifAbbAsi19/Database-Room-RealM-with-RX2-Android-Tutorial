@@ -24,7 +24,7 @@ class AddUserDetails : AppCompatActivity() {
 
         binding?.userNameEt?.addTextChangedListener(binding?.viewModel?.getUserName())
 
-
+        binding?.viewModel?.setTextView(binding?.textView!!)
 
 
     }
