@@ -6,6 +6,10 @@ import com.droid.databasetutorial.data.entity.ContactNumber
 
 class TypeConvertersUtils {
 
+    /**
+     * @Link developer.android.com/reference/android/arch/persistence/room/TypeConverters
+     */
+
     companion object {
 
         @JvmStatic

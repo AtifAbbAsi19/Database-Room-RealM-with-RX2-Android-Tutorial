@@ -29,6 +29,10 @@ class UpdateUserViewModel : ViewModel() {
 
     var view: TextView? = null
 
+
+    /**
+     * @Link https://android.jlelse.eu/android-data-binding-binding-adapters-part-5-2bc91e43caa0
+     */
     @BindingAdapter("app:greeting")
     fun bindingAdapterExample(textView: TextView, value: String) {
         textView.text = "".plus(value)
