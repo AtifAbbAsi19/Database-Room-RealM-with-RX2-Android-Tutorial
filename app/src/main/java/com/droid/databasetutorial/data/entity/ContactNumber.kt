@@ -13,13 +13,15 @@ class ContactNumber() {
     @PrimaryKey(autoGenerate = true)
     var id: Int = -1
 
-    @NonNull
-    @ColumnInfo(name = "email")
-    var email: String? = null
 
-    @NonNull
+    @ColumnInfo(name = "email")
+    var email: String =" "
+
+
     @ColumnInfo(name = "contactNumber")
-    var contactNumber: String? = null
-//    constructor():this()
+    var contactNumber: String = " "
+
+
+
 
 }

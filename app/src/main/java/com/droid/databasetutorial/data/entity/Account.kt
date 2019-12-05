@@ -5,7 +5,7 @@ import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-@Entity(tableName = "account")
+@Entity(tableName = "account_number")
  class Account {
 
     @PrimaryKey(autoGenerate = true)
@@ -18,4 +18,7 @@ import androidx.room.PrimaryKey
     @NonNull
     @ColumnInfo(name = "accountNumber")
     var accountNumber: String?=null
+
+
+
 }

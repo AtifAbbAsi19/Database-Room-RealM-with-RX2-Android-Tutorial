@@ -1,26 +1,44 @@
 package com.droid.databasetutorial.ui
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
+import android.os.AsyncTask
 import android.os.Bundle
-import android.view.View
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import com.droid.databasetutorial.R
 import com.droid.databasetutorial.data.database.AppDatabase
-import com.droid.databasetutorial.data.entity.ContactNumber
 import com.droid.databasetutorial.data.entity.User
 import com.droid.databasetutorial.ui.add_user.AddUserDetails
 
+
 class MainActivity : AppCompatActivity() {
+
+
+    var userList: List<User> = ArrayList()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
 
-        val addUserTextView: TextView= this.findViewById(R.id.addUser)
+        val addUserTextView: TextView = this.findViewById(R.id.addUser)
 
-        addUserTextView.setOnClickListener { startActivity(Intent(applicationContext,AddUserDetails::class.java)) }
+        /**
+         *  Insert and get data using Database Async way
+         */
+
+
+
+        /*     Thread(Runnable {
+
+                 userList = AppDatabase.getDatabase(this).userDao().getAllUsers()
+
+             }).start()*/
+
+        userList = AppDatabase.getDatabase(this).userDao().getAllUsers()
+
+        addUserTextView.text = "Add User"
+        addUserTextView.setOnClickListener { startActivity(Intent(applicationContext, AddUserDetails::class.java)) }
 
 
 //AppDatabase.getDatabase(this).userDao().insertUser()

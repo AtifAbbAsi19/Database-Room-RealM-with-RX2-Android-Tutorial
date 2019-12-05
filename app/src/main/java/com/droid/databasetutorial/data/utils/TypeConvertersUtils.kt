@@ -1,16 +1,22 @@
 package com.droid.databasetutorial.data.utils
 
 import androidx.room.TypeConverter
+import com.droid.databasetutorial.data.entity.Account
 import com.droid.databasetutorial.data.entity.Address
 import com.droid.databasetutorial.data.entity.ContactNumber
+import com.google.gson.Gson
+import com.google.gson.reflect.TypeToken
 
 class TypeConvertersUtils {
+
 
     /**
      * @Link developer.android.com/reference/android/arch/persistence/room/TypeConverters
      */
 
     companion object {
+
+        val gson = Gson()
 
         @JvmStatic
         @TypeConverter
@@ -22,6 +28,28 @@ class TypeConvertersUtils {
         @TypeConverter
         fun toContactNumber(email: String): ContactNumber? {
             return if (email == null) null else ContactNumber()
+        }
+
+
+
+        @TypeConverter
+        fun accountArrayListToJson(list: List<Account>?): String? {
+            return if(list == null) null else gson.toJson(list)
+        }
+
+        @TypeConverter
+        fun accountJsonToArrayList(jsonData: String?): List<Account>? {
+            return if (jsonData == null) null else gson.fromJson(jsonData, object : TypeToken<List<Account>?>() {}.type)
+        }
+
+        @TypeConverter
+        fun contactNumberArrayListToJson(list: List<ContactNumber>?): String? {
+            return if(list == null) null else gson.toJson(list)
+        }
+
+        @TypeConverter
+        fun contactNumberJsonToArrayList(jsonData: String?): List<ContactNumber>? {
+            return if (jsonData == null) null else gson.fromJson(jsonData, object : TypeToken<List<ContactNumber>?>() {}.type)
         }
 
     }

@@ -5,20 +5,28 @@
       <config />
     </shared>
   </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+    <option name="TOOL_WINDOW_REGEXP_FILTER" value="false" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="ab4610f6-300e-43d8-955a-06ff09c9c621" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/utils/ValidatorUtils.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_gson_gson_2_8_5_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/ui/Main2Activity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/activity_main2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_gson_gson_2_8_0_jar.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/data/database/AppDatabase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/data/database/AppDatabase.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/data/entity/Account.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/data/entity/Account.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/data/entity/Address.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/data/entity/Address.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/data/entity/ContactNumber.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/data/entity/ContactNumber.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/data/entity/User.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/data/entity/User.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/data/utils/TypeConvertersUtils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/data/utils/TypeConvertersUtils.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/ui/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/ui/MainActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/ui/add_user/AddUserDetails.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/ui/add_user/AddUserDetails.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/ui/add_user/UpdateUserViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/ui/add_user/UpdateUserViewModel.kt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,12 +53,21 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/data/entity/Address.kt">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/ui/MainActivity.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+            <state relative-caret-position="54">
+              <caret line="29" selection-start-line="29" selection-end-line="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/ui/add_user/AddUserDetails.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="309">
+              <caret line="113" selection-start-line="113" selection-end-line="113" />
               <folding>
-                <element signature="e#48#174#0" expanded="true" />
+                <element signature="e#1130#1644#0" />
               </folding>
             </state>
           </provider>
@@ -59,21 +76,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/data/entity/User.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="19" column="60" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="60" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/ui/add_user/AddUserDetails.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="109" column="57" selection-start-line="109" selection-start-column="57" selection-end-line="109" selection-end-column="57" />
-              <folding>
-                <element signature="e#1130#1644#0" />
-                <element signature="e#1670#3429#0" />
-              </folding>
+            <state relative-caret-position="273">
+              <caret line="20" column="30" lean-forward="true" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -81,8 +85,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/data/entity/Account.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="204">
+              <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
               <folding>
                 <element signature="e#48#174#0" expanded="true" />
               </folding>
@@ -91,13 +95,34 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/data/entity/Address.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
+              <folding>
+                <element signature="e#48#174#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/data/utils/TypeConvertersUtils.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="21" column="22" lean-forward="true" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+            <state relative-caret-position="375">
+              <caret line="48" selection-start-line="48" selection-end-line="48" />
               <folding>
-                <element signature="e#47#195#0" expanded="true" />
+                <element signature="e#47#290#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="185">
+              <caret line="91" column="51" selection-start-line="91" selection-start-column="51" selection-end-line="91" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -105,8 +130,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/data/entity/ContactNumber.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="77">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="268">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
               <folding>
                 <element signature="e#48#174#0" expanded="true" />
               </folding>
@@ -141,20 +166,22 @@
         <option value="$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/utils/RepoUtils.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/data/utils/TypeConverterUtils.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/ui/AddUserDetails.kt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/ui/MainActivity.kt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/data/database/AppDatabase.kt" />
         <option value="$PROJECT_DIR$/src/main/res/layout/activity_add_user_details.xml" />
         <option value="$PROJECT_DIR$/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/utils/ValidatorUtils.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/ui/add_user/UpdateUserViewModel.kt" />
-        <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/data/entity/User.kt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/data/entity/ContactNumber.kt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/data/entity/Account.kt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/data/entity/Address.kt" />
         <option value="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/data/utils/TypeConvertersUtils.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/ui/add_user/AddUserDetails.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/data/database/AppDatabase.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/ui/MainActivity.kt" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/data/utils/TypeConvertersUtils.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/data/entity/Address.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/data/entity/ContactNumber.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/data/entity/User.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/data/entity/Account.kt" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/activity_main2.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/ui/Main2Activity.kt" />
       </list>
     </option>
   </component>
@@ -170,7 +197,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -202,7 +228,7 @@
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
               <item name="databasetutorial" type="cbb59c9e:AndroidPsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="app" type="1abcf292:AndroidViewProjectNode" />
@@ -227,7 +253,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -239,10 +265,11 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="DEBUGGABLE_DEVICE" value="Pixel_3_XL_API_29 [emulator-5554]" />
+    <property name="DEBUGGABLE_DEVICE" value="emulator-5554" />
     <property name="DEBUGGABLE_PROCESS" value="com.droid.databasetutorial" />
     <property name="DEBUGGER_ID" value="Auto" />
     <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Pixel_3_XL_API_29" />
@@ -358,21 +385,21 @@
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.23959732" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.9155963" visible="true" weight="0.23959732" />
       <window_info id="Structure" order="2" side_tool="true" />
-      <window_info id="Build Variants" order="3" side_tool="true" />
+      <window_info id="Build Variants" order="3" sideWeight="0.08440367" side_tool="true" visible="true" weight="0.23959732" />
       <window_info id="Image Layers" order="4" />
       <window_info id="Designer" order="5" />
       <window_info id="Resources Explorer" order="6" />
       <window_info id="Capture Tool" order="7" />
       <window_info id="Favorites" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="0" weight="0.329429" />
-      <window_info active="true" anchor="bottom" id="Logcat" order="1" visible="true" weight="0.5592972" />
+      <window_info anchor="bottom" id="Logcat" order="1" sideWeight="0.49932885" weight="0.12737921" />
       <window_info anchor="bottom" id="TODO" order="2" />
       <window_info anchor="bottom" id="Android Profiler" order="3" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.3338214" />
+      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.49932885" visible="true" weight="0.20204978" />
       <window_info anchor="bottom" id="Terminal" order="5" weight="0.39824304" />
-      <window_info anchor="bottom" id="Event Log" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.50067115" side_tool="true" weight="0.6603221" />
       <window_info anchor="bottom" id="Flutter Performance" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Build" order="9" weight="0.46559298" />
@@ -391,18 +418,63 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/ui/add_user/UpdateUserViewModel.kt</url>
-          <line>54</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/ui/add_user/UpdateUserViewModel.kt</url>
           <line>78</line>
           <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/ui/MainActivity.kt</url>
+          <line>39</line>
+          <properties />
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/ui/add_user/AddUserDetails.kt</url>
+          <line>100</line>
+          <properties />
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/ui/add_user/AddUserDetails.kt</url>
+          <line>113</line>
+          <properties />
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/data/utils/TypeConvertersUtils.kt</url>
+          <line>41</line>
+          <properties />
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/data/utils/TypeConvertersUtils.kt</url>
+          <line>46</line>
+          <properties />
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/data/utils/TypeConvertersUtils.kt</url>
+          <line>51</line>
+          <properties />
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/data/utils/TypeConvertersUtils.kt</url>
+          <line>36</line>
+          <properties />
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>AppDatabase.getDatabase(this).userDao().getAllUsers()</expression-string>
+        <language-id>kotlin</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/data/TypeConvertor.java" />
@@ -414,8 +486,8 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor" />
       <provider editor-type-id="android-manifest" />
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="jar://$USER_HOME$/AppData/Local/Android/Sdk/platforms/android-29/android.jar!/android/widget/TextView.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -435,13 +507,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/data/database/AppDatabase.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-391">
-          <caret line="14" column="123" selection-start-line="14" selection-start-column="123" selection-end-line="14" selection-end-column="123" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/utils/RepoUtils.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -453,30 +518,20 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_add_user_details.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
           <caret line="108" column="32" selection-start-line="108" selection-start-column="32" selection-end-line="108" selection-end-column="32" />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/data/dao/UserDao.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
-          <folding>
-            <element signature="e#45#118#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="38" selection-start-column="38" selection-end-column="38" />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/utils/ValidatorUtils.kt">
       <provider selected="true" editor-type-id="text-editor">
@@ -502,39 +557,9 @@
     <entry file="file://$PROJECT_DIR$/../settings.gradle">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="32" column="56" selection-start-line="32" selection-start-column="56" selection-end-line="32" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-381" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/ui/MainActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/ui/add_user/UpdateUserViewModel.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="60" column="17" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
-          <folding>
-            <element signature="e#1098#1144#0" />
-            <element signature="e#1187#1223#0" />
-            <element signature="e#1997#2611#0" />
-            <element signature="e#2649#3263#0" />
-            <element signature="e#3298#3910#0" />
-            <element signature="e#3947#4565#0" />
-            <element signature="e#4608#5227#0" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.50/bc0c767786c4a3c042a364e69d3f3dd5ff5253a5/kotlin-stdlib-1.3.50-sources.jar!/kotlin/String.kt">
@@ -551,10 +576,102 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava2/rxjava/2.2.7/973432567aabd7dda36a4d33bf040f76ae9845ce/rxjava-2.2.7-sources.jar!/io/reactivex/Completable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="104" column="22" selection-start-line="104" selection-start-column="22" selection-end-line="104" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/ui/add_user/UpdateUserViewModel.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/AppData/Local/Android/Sdk/platforms/android-29/android.jar!/android/os/AsyncTask.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#2364#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/data/database/AppDatabase.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/AppData/Local/Android/Sdk/platforms/android-29/android.jar!/android/os/Looper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+          <folding>
+            <element signature="e#651#652#0" expanded="true" />
+            <element signature="e#702#703#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/tmp/kapt3/stubs/debug/com/droid/databasetutorial/data/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/data/dao/UserDao.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+          <folding>
+            <element signature="e#45#118#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/generated/source/kapt/debug/com/droid/databasetutorial/data/dao/UserDao_Impl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="173" column="57" lean-forward="true" selection-start-line="173" selection-start-column="57" selection-end-line="173" selection-end-column="57" />
+          <folding>
+            <element signature="e#5311#5317#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="91" column="51" selection-start-line="91" selection-start-column="51" selection-end-line="91" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/ui/add_user/AddUserDetails.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="113" selection-start-line="113" selection-end-line="113" />
+          <folding>
+            <element signature="e#1130#1644#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/data/entity/Address.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+        <state relative-caret-position="204">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
           <folding>
             <element signature="e#48#174#0" expanded="true" />
           </folding>
@@ -563,55 +680,62 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/data/entity/ContactNumber.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="268">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
           <folding>
             <element signature="e#48#174#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/ui/MainActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/data/entity/Account.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+          <folding>
+            <element signature="e#48#174#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_main2.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="29" lean-forward="true" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/ui/Main2Activity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#40#148#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/data/entity/User.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="19" column="60" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/data/entity/Account.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#48#174#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="273">
+          <caret line="20" column="30" lean-forward="true" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/data/utils/TypeConvertersUtils.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="21" column="22" lean-forward="true" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+        <state relative-caret-position="375">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
           <folding>
-            <element signature="e#47#195#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/ui/add_user/AddUserDetails.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="109" column="57" selection-start-line="109" selection-start-column="57" selection-end-line="109" selection-end-column="57" />
-          <folding>
-            <element signature="e#1130#1644#0" />
-            <element signature="e#1670#3429#0" />
+            <element signature="e#47#290#0" expanded="true" />
           </folding>
         </state>
       </provider>

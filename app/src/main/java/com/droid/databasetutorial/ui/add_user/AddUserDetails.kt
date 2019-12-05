@@ -82,6 +82,7 @@ class AddUserDetails : AppCompatActivity() {
 
         if (binding?.contactNumberEt?.text != null && ValidatorUtils.hasValue(binding?.contactNumberEt?.text.toString())) {
             var contactNumber = ContactNumber()
+            contactNumber.email=user.email
             contactNumber.contactNumber = binding?.contactNumberEt?.text.toString()
             user.contactNumber.add(contactNumber)
         } else {
@@ -90,6 +91,7 @@ class AddUserDetails : AppCompatActivity() {
 
         if (binding?.accountNumberEt?.text != null && ValidatorUtils.hasValue(binding?.accountNumberEt?.text.toString())) {
             var account = Account()
+            account.email=user.email
             account.accountNumber = binding?.accountNumberEt?.text.toString()
             user.accountNumber.add(account)
         } else {
