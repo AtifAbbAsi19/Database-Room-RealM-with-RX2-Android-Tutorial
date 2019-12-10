@@ -6,7 +6,7 @@ import kotlin.collections.ArrayList
 
 @SuppressWarnings(RoomWarnings.PRIMARY_KEY_FROM_EMBEDDED_IS_DROPPED)
 @Entity(tableName = "user")
-class User() {
+class User {
 
     @PrimaryKey(autoGenerate = true)
     var id: Int = 0
@@ -37,15 +37,24 @@ class User() {
      * https://developer.android.com/reference/android/arch/persistence/room/Embedded
      */
 
-    @NonNull
+
     @Embedded(prefix = "contact_number")
-    var contactNumber: ArrayList<ContactNumber> = ArrayList()
+    var simpleContactNumber: ContactNumber? = null
+
+
+    //    @Relation(parentColumn = "id", entityColumn = "email")
+    @ColumnInfo(name = "contactNumber")
+    var contactNumber: List<ContactNumber> = ArrayList()
 //        @ColumnInfo(name = "contact_number") var contactNumber: ArrayList<ContactNumber>,
 
 
-    @NonNull
     @Embedded(prefix = "account_number")
-    var accountNumber: ArrayList<Account> = ArrayList()
+    var simpleAccountNumber: Account? = null
+
+
+    //    @Relation(parentColumn = "id", entityColumn = "email")
+    @ColumnInfo(name = "accountNumber")
+    var accountNumber: List<Account> = ArrayList()
 //        @ColumnInfo(name = "account_number") var accountNumber: ArrayList<Account>
 // @Ignore
 

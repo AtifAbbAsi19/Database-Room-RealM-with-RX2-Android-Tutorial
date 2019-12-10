@@ -17,6 +17,7 @@ import io.reactivex.Completable
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.disposables.Disposable
+import io.reactivex.functions.Predicate
 import io.reactivex.schedulers.Schedulers
 
 class AddUserDetails : AppCompatActivity() {
@@ -82,20 +83,24 @@ class AddUserDetails : AppCompatActivity() {
 
         if (binding?.contactNumberEt?.text != null && ValidatorUtils.hasValue(binding?.contactNumberEt?.text.toString())) {
             var contactNumber = ContactNumber()
-            contactNumber.email=user.email
+            contactNumber.email = user.email
             contactNumber.contactNumber = binding?.contactNumberEt?.text.toString()
-            user.contactNumber.add(contactNumber)
+            user.contactNumber = listOf(contactNumber)
+            user.simpleContactNumber = contactNumber
         } else {
-            user.contactNumber.add(ContactNumber())
+            user.contactNumber = listOf(ContactNumber())
+            user.simpleContactNumber = ContactNumber()
         }
 
         if (binding?.accountNumberEt?.text != null && ValidatorUtils.hasValue(binding?.accountNumberEt?.text.toString())) {
             var account = Account()
-            account.email=user.email
+            account.email = user.email
             account.accountNumber = binding?.accountNumberEt?.text.toString()
-            user.accountNumber.add(account)
+            user.accountNumber = listOf(account)
+            user.simpleAccountNumber = account
         } else {
-            user.accountNumber.add(Account())
+            user.accountNumber = listOf(Account())
+            user.simpleAccountNumber = Account()
         }
 
         storeUserRecord(user)
@@ -110,7 +115,12 @@ class AddUserDetails : AppCompatActivity() {
             AppDatabase.getDatabase(this).userDao().insertUser(user)
         }.subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
+                .doOnError {
+                    Toast.makeText(this, "Error Occured ".plus(it.message), Toast.LENGTH_LONG).show()
+                }
+                //.onErrorComplete { t ->  Toast.makeText(AddUserDetails::class.java, "Error ".plus(t.message), Toast.LENGTH_LONG).show() }
                 .subscribe {
+
                     Toast.makeText(this, "Data Saved", Toast.LENGTH_LONG).show()
                 }
         )
