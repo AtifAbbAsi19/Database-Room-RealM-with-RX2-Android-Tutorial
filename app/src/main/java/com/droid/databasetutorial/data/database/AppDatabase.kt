@@ -34,7 +34,7 @@ abstract class AppDatabase : RoomDatabase() {
                         context.applicationContext,
                         AppDatabase::class.java,
                         "user_database"
-                ).allowMainThreadQueries().build()
+                ).build() //.allowMainThreadQueries()
                 INSTANCE = instance
                 return instance
             }

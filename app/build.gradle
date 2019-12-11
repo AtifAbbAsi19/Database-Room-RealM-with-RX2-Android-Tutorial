@@ -72,6 +72,10 @@ dependencies {
     // RxAndroid
     implementation "io.reactivex.rxjava2:rxandroid:$rxandroid_version"
 
+    implementation "android.arch.persistence.room:rxjava2:$rxandroid_version"
+
+    implementation 'androidx.room:room-rxjava2:2.2.2'
+
 
     // Lifecycle components
     implementation "androidx.lifecycle:lifecycle-extensions:$rootProject.archLifecycleVersion"

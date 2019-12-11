@@ -6,6 +6,7 @@ import android.widget.Toast
 import androidx.annotation.NonNull
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
+import androidx.databinding.ObservableArrayList
 import com.droid.databasetutorial.R
 import com.droid.databasetutorial.data.database.AppDatabase
 import com.droid.databasetutorial.data.entity.Account

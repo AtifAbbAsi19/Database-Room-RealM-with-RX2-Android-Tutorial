@@ -44,7 +44,7 @@ class User {
 
     //    @Relation(parentColumn = "id", entityColumn = "email")
     @ColumnInfo(name = "contactNumber")
-    var contactNumber: List<ContactNumber> = ArrayList()
+    var contactNumber: List<ContactNumber> = arrayListOf()
 //        @ColumnInfo(name = "contact_number") var contactNumber: ArrayList<ContactNumber>,
 
 
@@ -54,7 +54,7 @@ class User {
 
     //    @Relation(parentColumn = "id", entityColumn = "email")
     @ColumnInfo(name = "accountNumber")
-    var accountNumber: List<Account> = ArrayList()
+    var accountNumber: List<Account> = arrayListOf()
 //        @ColumnInfo(name = "account_number") var accountNumber: ArrayList<Account>
 // @Ignore
 
