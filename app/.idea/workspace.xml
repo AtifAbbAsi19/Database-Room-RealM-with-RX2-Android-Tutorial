@@ -11,17 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ab4610f6-300e-43d8-955a-06ff09c9c621" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_room_room_rxjava2_2_2_2_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_reactivex_rxjava2_rxjava_2_2_9_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_reactivex_rxjava2_rxjava_2_2_7_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/data/dao/UserDao.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/data/dao/UserDao.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/data/database/AppDatabase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/data/database/AppDatabase.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/data/entity/User.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/data/entity/User.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/ui/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/ui/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/ui/add_user/AddUserDetails.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/ui/add_user/AddUserDetails.kt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,8 +43,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/ui/MainActivity.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="112" selection-start-line="112" selection-end-line="112" />
+            <state relative-caret-position="156">
+              <caret line="85" column="32" lean-forward="true" selection-start-line="85" selection-start-column="32" selection-end-line="85" selection-end-column="32" />
               <folding>
                 <element signature="e#39#601#0" expanded="true" />
               </folding>
@@ -351,8 +341,8 @@
       <window_info anchor="bottom" id="Logcat" order="2" sideWeight="0.49932885" weight="0.12737921" />
       <window_info anchor="bottom" id="TODO" order="3" />
       <window_info anchor="bottom" id="Android Profiler" order="4" />
-      <window_info active="true" anchor="bottom" id="Debug" order="5" sideWeight="0.49932885" visible="true" weight="0.3660322" />
-      <window_info anchor="bottom" id="Terminal" order="6" weight="0.39824304" />
+      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.49932885" weight="0.3660322" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="6" visible="true" weight="0.39824304" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50067115" side_tool="true" weight="0.6603221" />
       <window_info anchor="bottom" id="Flutter Performance" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
@@ -409,7 +399,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/ui/MainActivity.kt</url>
-          <line>112</line>
+          <line>105</line>
           <properties />
           <option name="timeStamp" value="14" />
         </line-breakpoint>
@@ -445,13 +435,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/ui/MainActivity.kt</url>
-          <line>98</line>
-          <properties />
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/ui/MainActivity.kt</url>
-          <line>97</line>
+          <line>91</line>
           <properties />
           <option name="timeStamp" value="33" />
         </line-breakpoint>
@@ -460,6 +444,11 @@
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>it</expression-string>
+        <language-id>kotlin</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>AppDatabase.getDatabase(this).userDao().getAllUsers()</expression-string>
         <language-id>kotlin</language-id>
@@ -848,8 +837,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/ui/MainActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="112" selection-start-line="112" selection-end-line="112" />
+        <state relative-caret-position="156">
+          <caret line="85" column="32" lean-forward="true" selection-start-line="85" selection-start-column="32" selection-end-line="85" selection-end-column="32" />
           <folding>
             <element signature="e#39#601#0" expanded="true" />
           </folding>

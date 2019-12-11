@@ -82,30 +82,22 @@ class MainActivity : AppCompatActivity() {
 
 
         disposable.addAll(
+
                 AppDatabase.getDatabase(this).userDao().getAllUsers()
+                        .subscribeOn(Schedulers.io())
                         .observeOn(AndroidSchedulers.mainThread())
                         .subscribe {
-                            userList=it
+                            updateList(it)
+                            /*    Consumer<List<User>> { list ->
+                                    userList = list
 
-                            if (null != userList && userList.isNotEmpty()) { //null and empty check
-                                Toast.makeText(applicationContext,"User List Size : ".plus(userList.size),Toast.LENGTH_LONG).show()
-
-                            }else{
-                                Toast.makeText(applicationContext,"No Record Found ",Toast.LENGTH_LONG).show()
-                            }
-
-
-                        /*    Consumer<List<User>> { list ->
-                                userList = list
-
-                            }//end of accept method*/
+                                }//end of accept method*/
                             //end of consumer
 
 
                         }//end of subscribe
 
         )//end of disposable
-
 
 
 //        userList = AppDatabase.getDatabase(this).userDao().getAllUsers()
@@ -115,5 +107,18 @@ class MainActivity : AppCompatActivity() {
 
 
     }//end of on create
+
+    private fun updateList(it: List<User>?) {
+
+        if (null != it && it.isNotEmpty()) { //null and empty check
+            userList = it
+            Toast.makeText(applicationContext, "User List Size : ".plus(userList.size), Toast.LENGTH_LONG).show()
+
+        } else {
+            Toast.makeText(applicationContext, "No Record Found ", Toast.LENGTH_LONG).show()
+        }
+
+    }
+
 
 }//end of class
