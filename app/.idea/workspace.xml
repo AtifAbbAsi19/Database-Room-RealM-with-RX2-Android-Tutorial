@@ -6,6 +6,7 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="debug" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
     <option name="TOOL_WINDOW_REGEXP_FILTER" value="false" />
   </component>
@@ -43,8 +44,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/ui/MainActivity.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="85" column="32" lean-forward="true" selection-start-line="85" selection-start-column="32" selection-end-line="85" selection-end-column="32" />
+            <state relative-caret-position="581">
+              <caret line="119" column="64" lean-forward="true" selection-start-line="119" selection-start-column="64" selection-end-line="119" selection-end-column="64" />
               <folding>
                 <element signature="e#39#601#0" expanded="true" />
               </folding>
@@ -338,11 +339,11 @@
       <window_info id="DB Browser" order="9" sideWeight="0.35871157" side_tool="true" weight="0.23758389" />
       <window_info anchor="bottom" id="DB Execution Console" order="0" weight="0.32892805" />
       <window_info anchor="bottom" id="Run" order="1" weight="0.329429" />
-      <window_info anchor="bottom" id="Logcat" order="2" sideWeight="0.49932885" weight="0.12737921" />
+      <window_info active="true" anchor="bottom" id="Logcat" order="2" sideWeight="0.49932885" visible="true" weight="0.3045388" />
       <window_info anchor="bottom" id="TODO" order="3" />
       <window_info anchor="bottom" id="Android Profiler" order="4" />
       <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.49932885" weight="0.3660322" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="6" visible="true" weight="0.39824304" />
+      <window_info anchor="bottom" id="Terminal" order="6" weight="0.39824304" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50067115" side_tool="true" weight="0.6603221" />
       <window_info anchor="bottom" id="Flutter Performance" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
@@ -399,7 +400,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/ui/MainActivity.kt</url>
-          <line>105</line>
+          <line>170</line>
           <properties />
           <option name="timeStamp" value="14" />
         </line-breakpoint>
@@ -423,21 +424,15 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/ui/MainActivity.kt</url>
-          <line>83</line>
+          <line>80</line>
           <properties />
-          <option name="timeStamp" value="28" />
+          <option name="timeStamp" value="37" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/ui/MainActivity.kt</url>
-          <line>86</line>
+          <line>141</line>
           <properties />
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/ui/MainActivity.kt</url>
-          <line>91</line>
-          <properties />
-          <option name="timeStamp" value="33" />
+          <option name="timeStamp" value="38" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -837,8 +832,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/droid/databasetutorial/ui/MainActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="85" column="32" lean-forward="true" selection-start-line="85" selection-start-column="32" selection-end-line="85" selection-end-column="32" />
+        <state relative-caret-position="581">
+          <caret line="119" column="64" lean-forward="true" selection-start-line="119" selection-start-column="64" selection-end-line="119" selection-end-column="64" />
           <folding>
             <element signature="e#39#601#0" expanded="true" />
           </folding>

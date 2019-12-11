@@ -2,6 +2,7 @@ package com.droid.databasetutorial.ui
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.TextView
 import android.widget.Toast
 import androidx.annotation.NonNull
@@ -11,8 +12,10 @@ import com.droid.databasetutorial.data.database.AppDatabase
 import com.droid.databasetutorial.data.entity.User
 import com.droid.databasetutorial.ui.add_user.AddUserDetails
 import io.reactivex.Observable
+import io.reactivex.Observer
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
+import io.reactivex.disposables.Disposable
 import io.reactivex.functions.Consumer
 import io.reactivex.schedulers.Schedulers
 
@@ -21,6 +24,7 @@ class MainActivity : AppCompatActivity() {
 
 
     var userList: List<User> = ArrayList()
+    var userListNormal: List<User> = ArrayList()
 
     var disposable: CompositeDisposable = CompositeDisposable()
 
@@ -31,17 +35,6 @@ class MainActivity : AppCompatActivity() {
 
         val addUserTextView: TextView = this.findViewById(R.id.addUser)
 
-        /**
-         *  Insert and get data using Database Async way
-         */
-
-
-        /*     Thread(Runnable {
-
-                 userList = AppDatabase.getDatabase(this).userDao().getAllUsers()
-
-             }).start()*/
-        //https://medium.com/@alahammad/database-with-room-using-rxjava-764ee6124974
 
 /*
         var observableArrayList = Observable
@@ -65,20 +58,18 @@ class MainActivity : AppCompatActivity() {
          * 3) Designate what thread to do the work on and what thread to emit the result to
          * 4) Subscribe an Observer to the Observable and View Result
          *
+         *    io.reactivex import
+         *
          *
          * @link https://blog.gojekengineering.com/multi-threading-like-a-boss-in-android-with-rxjava-2-b8b7cf6eb5e2
          *
          * @link https://codinginfinite.com/android-room-persistent-rxjava/
          *
          * @link https://stackoverflow.com/questions/55623588/incorrect-code-generation-from-room-query-when-using-flowable-observable
+         *
+         * @link  https://medium.com/@alahammad/database-with-room-using-rxjava-764ee6124974
+
          */
-
-
-        /*    Observable.fromIterable(AppDatabase.getDatabase(this).userDao().getAllUsersNormal())
-                    .subscribeOn(Schedulers.io())
-                    .observeOn(AndroidSchedulers.mainThread())
-                    .s
-    */
 
 
         disposable.addAll(
@@ -98,6 +89,81 @@ class MainActivity : AppCompatActivity() {
                         }//end of subscribe
 
         )//end of disposable
+
+        /**
+         *
+         * @param Iterable_Operator
+         * Iterable takes a list of object and convert them into Observable
+         */
+
+        var observable = Observable.
+                fromIterable(AppDatabase.getDatabase(this).userDao().getAllUsersNormal())
+                .subscribeOn(Schedulers.io()) //where the work is going to be done #worker_thread
+                .observeOn(AndroidSchedulers.mainThread()) // what thread to observe on
+
+
+        disposable.addAll(
+
+                observable.subscribe {
+                    object : Observer<User> {
+                        override fun onComplete() {
+                            Toast.makeText(applicationContext, "Completed : List Size: ".plus(userListNormal.size), Toast.LENGTH_LONG).show()
+                        }
+
+                        override fun onSubscribe(d: Disposable) {
+                            disposable.add(d)
+                            Log.d("Main", "onSubscribe Called")
+                        }
+
+                        override fun onNext(t: User) {
+                            if (null != it) {
+                                userListNormal = arrayListOf(it)
+                            }
+
+                            Log.d("Main", "OnNext Called")
+                            Log.d("Main", "OnNext Result : ".plus(it.toString()))
+                        }
+
+                        override fun onError(e: Throwable) {
+                            Log.d("Main", "onError Called")
+                            Log.d("Main", "onError Message : ".plus(e.message))
+                        }
+
+                    }
+                }
+
+        )//end of
+
+
+        /*
+
+        crashing
+
+        disposable.addAll(
+
+                      Observable.
+                              fromIterable(AppDatabase.getDatabase(this).userDao().getAllUsersNormal())
+                              .subscribeOn(Schedulers.io()) //where the work is going to be done #worker_thread
+                              .observeOn(AndroidSchedulers.mainThread()) // what thread to observe on
+                              .subscribe {
+
+
+                                  if (null != it) {
+                                      userListNormal = arrayListOf(it)
+                                      if (null != userListNormal && userListNormal.isNotEmpty()) { //null and empty check
+                                          Toast.makeText(applicationContext, "User List Size : ".plus(userListNormal.size), Toast.LENGTH_LONG).show()
+
+                                      } else {
+                                          Toast.makeText(applicationContext, "No Record Found ", Toast.LENGTH_LONG).show()
+                                      }
+                                  } else {
+                                      Toast.makeText(applicationContext, "Object is Null ", Toast.LENGTH_LONG).show()
+
+                                  }
+
+
+                              }//end of subscribe
+              )//end of dispossible */
 
 
 //        userList = AppDatabase.getDatabase(this).userDao().getAllUsers()
