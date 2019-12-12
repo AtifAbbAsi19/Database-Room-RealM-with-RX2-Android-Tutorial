@@ -94,45 +94,51 @@ class MainActivity : AppCompatActivity() {
          *
          * @param Iterable_Operator
          * Iterable takes a list of object and convert them into Observable
+         *
+         * @link https://stackoverflow.com/questions/40323307/observable-vs-flowable-rxjava2/40326875
+         *
+         * @link https://eng.uber.com/rxjava-backpressure/
+         *
+         * observable (publisher)
          */
 
-        var observable = Observable.
-                fromIterable(AppDatabase.getDatabase(this).userDao().getAllUsersNormal())
-                .subscribeOn(Schedulers.io()) //where the work is going to be done #worker_thread
-                .observeOn(AndroidSchedulers.mainThread()) // what thread to observe on
 
+        /**
+         * @exception  java.lang.IllegalStateException:
+         * Cannot access database on the main thread since it may potentially lock the UI for a long period of time.
+         */
+        disposable.addAll( //addAll
 
-        disposable.addAll(
+                Observable.fromIterable(AppDatabase.getDatabase(this).userDao().getAllUsersNormal())//operator
+                        .subscribeOn(Schedulers.io()) //where the work is going to be done #worker_thread
+                        .observeOn(AndroidSchedulers.mainThread()) // what thread to observe on(return data to main thread)
+                        .subscribe {
+                            object : Observer<User> {
+                                override fun onComplete() {
+                                    Toast.makeText(applicationContext, "Completed : List Size: ".plus(userListNormal.size), Toast.LENGTH_LONG).show()
+                                }//end of onComplete
+                                override fun onSubscribe(d: Disposable) {
+                                    disposable.add(d)
+                                    Log.d("Main", "onSubscribe Called")
+                                }//end of onSubscribe
+                                override fun onNext(t: User) {
+                                    if (null != it) {
+                                        userListNormal = arrayListOf(it)
+                                    }//end of if
 
-                observable.subscribe {
-                    object : Observer<User> {
-                        override fun onComplete() {
-                            Toast.makeText(applicationContext, "Completed : List Size: ".plus(userListNormal.size), Toast.LENGTH_LONG).show()
-                        }
+                                    Log.d("Main", "OnNext Called")
+                                    Log.d("Main", "OnNext Result : ".plus(it.toString()))
+                                }//onNext
+                                override fun onError(e: Throwable) {
+                                    Log.d("Main", "onError Called")
+                                    Log.d("Main", "onError Message : ".plus(e.message))
+                                }//onError
 
-                        override fun onSubscribe(d: Disposable) {
-                            disposable.add(d)
-                            Log.d("Main", "onSubscribe Called")
-                        }
-
-                        override fun onNext(t: User) {
-                            if (null != it) {
-                                userListNormal = arrayListOf(it)
                             }
-
-                            Log.d("Main", "OnNext Called")
-                            Log.d("Main", "OnNext Result : ".plus(it.toString()))
                         }
 
-                        override fun onError(e: Throwable) {
-                            Log.d("Main", "onError Called")
-                            Log.d("Main", "onError Message : ".plus(e.message))
-                        }
 
-                    }
-                }
-
-        )//end of
+        )//end of disposable
 
 
         /*

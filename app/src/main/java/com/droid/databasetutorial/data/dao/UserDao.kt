@@ -9,8 +9,11 @@ interface UserDao {
 
     //https://medium.com/androiddevelopers/room-rxjava-acb0cd4f3757
 
+    //@topic Back Pressure
+    //https://proandroiddev.com/rxjava-backpressure-and-why-you-should-care-369c5242c9e6
+
     @Query("SELECT * FROM user")
-    fun getAllUsers(): Flowable<List<User>> //rx2 Query
+    fun getAllUsers(): Flowable<List<User>> //rx2 Query auto handle back pressure
 
     @Query("SELECT * FROM user")
     fun getAllUsersNormal(): List<User> //simple database query
