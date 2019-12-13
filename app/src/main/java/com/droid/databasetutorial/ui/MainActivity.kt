@@ -99,6 +99,8 @@ class MainActivity : AppCompatActivity() {
          *
          * @link https://eng.uber.com/rxjava-backpressure/
          *
+         * @link https://proandroiddev.com/rxjava-backpressure-and-why-you-should-care-369c5242c9e6
+         *
          * observable (publisher)
          */
 
